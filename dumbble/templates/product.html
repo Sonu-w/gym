@@ -160,7 +160,7 @@
                         <p>{{ product.description|truncatewords:15 }}</p>
                         <strong>₹{{ product.price }}</strong><br><br>
 
-                        <a href="http://127.0.0.1:8000/product_details/{{product.id}}" class="primary-btn add-to-cart-btn">View</a>
+                        <a href="product_details/{{product.id}}" class="primary-btn add-to-cart-btn">View</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -186,7 +186,7 @@
                         <p>{{ product.description|truncatewords:15 }}</p>
                         <strong>₹{{ product.price }}</strong><br><br>
 
-                        <a href="http://127.0.0.1:8000/product_details/{{product.id}}" class="primary-btn add-to-cart-btn">view</a>
+                        <a href="product_details/{{product.id}}" class="primary-btn add-to-cart-btn">view</a>
                     </div>
                 </div>
                 {% endfor %}
