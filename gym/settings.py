@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#d7-a$-_4qyzxy5$0_3w40f*zzf9=#fsj)rox11%8+co!sjnj&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*",'gym-d5re.onrender.com','localhost', '127.0.0.1']
 
 
 # Application definition
@@ -128,4 +128,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 if 'RENDER' in os.environ:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    
