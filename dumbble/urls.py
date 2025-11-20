@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path,include
 from . import views
-app_name='product'
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('404/', views.error_404, name='error_404'),
@@ -21,7 +21,7 @@ urlpatterns = [
     path('services/', views.services, name='services'),
     path('team/', views.team, name='team'),
     path('product/', views.product, name='product'),
-    path('product_details/<int:product_id>/', views.product_detail, name='product_detail'),
+    path('product/product_details/<int:product_id>/', views.product_detail, name='product_detail'),
     path('checkout/', views.checkout, name='checkout'),
     path('thankyou/', views.thankyou, name='thankyou'),
     ]
